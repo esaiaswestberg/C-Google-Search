@@ -5,7 +5,7 @@ Simple C# library for making simple Google searches without the use of any API.
 ```csharp
 GoogleSearch.Engine search = new GoogleSearch.Engine();
 GoogleSearch.Engine.Result[] results = search.Search("Your search query here...");
-Console.WriteLine("We found theese websites:");
+Console.WriteLine("We found these websites:");
 foreach(var result in results)
     Console.WriteLine(result.title + " - " + result.description + "\n    " + result.url);
 ```
@@ -14,7 +14,7 @@ foreach(var result in results)
 ```csharp
 GoogleSearch.Engine search = new GoogleSearch.Engine();
 GoogleSearch.Engine.Result[] results = search.SearchPages("Your search query here...", 5);
-Console.WriteLine("We found theese websites:");
+Console.WriteLine("We found these websites:");
 foreach(var result in results)
     Console.WriteLine(result.title + " - " + result.description + "\n    " + result.url);
 ```
